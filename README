@@ -1,0 +1,25 @@
+A simple program to detect TCP segments rearrangement method of remote OS.
+
+
+An echo server running on remote OS is needed.
+To get a Linux echo sever, you can use echo.c. To compile it, just "make echo".
+To detect Windows, you can use echo_win.cpp. I'm not familiar with windows
+network programming. So echo_win.cpp is modified from web and not included in
+Makefile.
+
+
+The detector runs in Linux.
+libpcap and libdnet is needed.
+
+
+I used it to test Arch, Fedora, Ubuntu, Win XP and Win 7.
+All Linux distributions favor after(suffix).
+Win 7 favors old.
+It was intersting that Win XP differed from Win 7. But I dont remember clearly
+what Win XP was. Maybe after.
+
+When I ran the test, Win 8 hadn't come. And I dont try Win 8 until now.
+
+
+More infomation about this simple detecter can be found at:
+     http://blog.csdn.net/tricky1997/article/details/7450893
